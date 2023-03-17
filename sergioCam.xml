@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
     <definition version="26">
-        <model>s3rg102</model>
+        <model>s3rg104</model>
         <vendor>ACSL</vendor>
     </definition>
     <parameters>
