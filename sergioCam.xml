@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
     <definition version="26">
-        <model>s3rg101</model>
+        <model>s3rg102</model>
         <vendor>ACSL</vendor>
     </definition>
     <parameters>
@@ -16,8 +16,8 @@
                 </option>
                 <option name="Auto" value="1">
                     <exclusions>
-                        <exclude>S3rCAM_ISO</exclude>
-                        <exclude>FukuCAM_APERTURE</exclude>
+                        <exclude>CAM_ISO</exclude>
+                        <exclude>CAM_APERTURE</exclude>
                         <exclude>CAM_SHUTTERSPD</exclude>
                         <exclude>SHUTTER_MODE</exclude>
                     </exclusions>
@@ -31,8 +31,8 @@
                 <option name="Electronic Shutter" value="1" />
             </options>
         </parameter>
-        <parameter name="S3rCAM_ISO" type="uint32" default="800">
-            <description>ISO</description>
+        <parameter name="CAM_ISO" type="uint32" default="800">
+            <description>S3rISO</description>
             <options>
                 <option name="50" value="50" />
                 <option name="64" value="64" />
@@ -58,8 +58,8 @@
                 <option name="6400" value="6400" />
             </options>
         </parameter>
-        <parameter name="FukuCAM_APERTURE" type="float" default="5.6">
-            <description>Aperture</description>
+        <parameter name="CAM_APERTURE" type="float" default="5.6">
+            <description>FukuAperture</description>
             <options>
                 <option name="f5.6" value="5.6" />
                 <option name="f6.3" value="6.3" />
