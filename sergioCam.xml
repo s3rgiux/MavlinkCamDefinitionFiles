@@ -16,8 +16,8 @@
                 </option>
                 <option name="Auto" value="1">
                     <exclusions>
-                        <exclude>CAM_ISO</exclude>
-                        <exclude>CAM_APERTURE</exclude>
+                        <exclude>S3rCAM_ISO</exclude>
+                        <exclude>FukuCAM_APERTURE</exclude>
                         <exclude>CAM_SHUTTERSPD</exclude>
                         <exclude>SHUTTER_MODE</exclude>
                     </exclusions>
@@ -31,7 +31,7 @@
                 <option name="Electronic Shutter" value="1" />
             </options>
         </parameter>
-        <parameter name="CAM_ISO" type="uint32" default="200">
+        <parameter name="S3rCAM_ISO" type="uint32" default="200">
             <description>ISO</description>
             <options>
                 <option name="50" value="50" />
@@ -58,7 +58,7 @@
                 <option name="6400" value="6400" />
             </options>
         </parameter>
-        <parameter name="CAM_APERTURE" type="float" default="5.6">
+        <parameter name="FukuCAM_APERTURE" type="float" default="5.6">
             <description>Aperture</description>
             <options>
                 <option name="f5.6" value="5.6" />
@@ -341,7 +341,39 @@
         </parameter>
         <parameter name="FOCUS_DIST" type="float" default="0.0">
             <description>Focus Distance [m]</description>
-			<options>
+			        <options>
+                <option name="1.0" value="1.0" />
+                <option name="2.0" value="2.0" />
+                <option name="4.0" value="4.0" />
+                <option name="8.0" value="8.0" />
+                <option name="10.0" value="10.0" />
+                <option name="12.0" value="12.0" />
+                <option name="14.0" value="14.0" />
+                <option name="18.0" value="18.0" />
+                <option name="20.0" value="20.0" />
+                <option name="25.0" value="25.0" />
+                <option name="30.0" value="30.0" />
+            </options>
+        </parameter>
+        <parameter name="AF_MIN_DIST" type="float" default="0.0">
+            <description>Auto Focus Min Distance [m]</description>
+			        <options>
+                <option name="1.0" value="1.0" />
+                <option name="2.0" value="2.0" />
+                <option name="4.0" value="4.0" />
+                <option name="8.0" value="8.0" />
+                <option name="10.0" value="10.0" />
+                <option name="12.0" value="12.0" />
+                <option name="14.0" value="14.0" />
+                <option name="18.0" value="18.0" />
+                <option name="20.0" value="20.0" />
+                <option name="25.0" value="25.0" />
+                <option name="30.0" value="30.0" />
+            </options>
+        </parameter>
+        <parameter name="AF_MAX_DIST" type="float" default="0.0">
+            <description>Auto Focus Max Distance [m]</description>
+			        <options>  
                 <option name="1" value="1" />
                 <option name="2" value="2" />
                 <option name="4" value="4" />
@@ -353,35 +385,7 @@
                 <option name="20" value="20" />
                 <option name="25" value="25" />
                 <option name="30" value="30" />
-            </options>
-        </parameter>
-        <parameter name="AF_MIN_DIST" type="float" default="0.0">
-            <description>Auto Focus Min Distance [m]</description>
-			<option name="1" value="1" />
-                <option name="2" value="2" />
-                <option name="4" value="4" />
-                <option name="8" value="8" />
-                <option name="10" value="10" />
-                <option name="12" value="12" />
-                <option name="14" value="14" />
-                <option name="18" value="18" />
-                <option name="20" value="20" />
-                <option name="25" value="25" />
-                <option name="30" value="30" />
-        </parameter>
-        <parameter name="AF_MAX_DIST" type="float" default="0.0">
-            <description>Auto Focus Max Distance [m]</description>
-			<option name="1" value="1" />
-                <option name="2" value="2" />
-                <option name="4" value="4" />
-                <option name="8" value="8" />
-                <option name="10" value="10" />
-                <option name="12" value="12" />
-                <option name="14" value="14" />
-                <option name="18" value="18" />
-                <option name="20" value="20" />
-                <option name="25" value="25" />
-                <option name="30" value="30" />
+              </options>
         </parameter>
         <parameter name="AF_STRATEGY" type="uint32" default="0">
             <description>Focus Limit Control</description>
@@ -553,7 +557,8 @@
         </parameter>
         <parameter name="OVERLAY_TRANSP" type="uint8" default="127">
             <description> - Overlay Transparency</description>
-			<option name="0" value="0" />
+			        <options>
+                <option name="0" value="0" />
                 <option name="10" value="10" />
                 <option name="20" value="20" />
                 <option name="30" value="30" />
@@ -564,6 +569,7 @@
                 <option name="80" value="80" />
                 <option name="90" value="90" />
                 <option name="100" value="100" />
+              </options>
         </parameter>
         <parameter name="FOCUS_POINT" type="uint8" default="1">
             <description> - Overlay Focus Point</description>
