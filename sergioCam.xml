@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
     <definition version="26">
-        <model>s3rg100</model>
+        <model>s3rg101</model>
         <vendor>ACSL</vendor>
     </definition>
     <parameters>
@@ -31,7 +31,7 @@
                 <option name="Electronic Shutter" value="1" />
             </options>
         </parameter>
-        <parameter name="S3rCAM_ISO" type="uint32" default="200">
+        <parameter name="S3rCAM_ISO" type="uint32" default="800">
             <description>ISO</description>
             <options>
                 <option name="50" value="50" />
