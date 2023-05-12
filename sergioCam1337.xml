@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
     <definition version="26">
-        <model>s3rg1337</model>
+        <model>PhaseOneMod</model>
         <vendor>ACSL</vendor>
     </definition>
     <parameters>
@@ -32,7 +32,7 @@
             </options>
         </parameter>
         <parameter name="CAM_ISO" type="uint32" default="800">
-            <description>S3rISO</description>
+            <description>ISO</description>
             <options>
                 <option name="50" value="50" />
                 <option name="64" value="64" />
@@ -59,7 +59,7 @@
             </options>
         </parameter>
         <parameter name="CAM_APERTURE" type="float" default="5.6">
-            <description>FukuAperture</description>
+            <description>Aperture</description>
             <options>
                 <option name="f5.6" value="5.6" />
                 <option name="f6.3" value="6.3" />
