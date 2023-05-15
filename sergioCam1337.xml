@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mavlinkcamera>
     <definition version="26">
-        <model>PhaseOneMod</model>
+        <model>Fukuchan</model>
         <vendor>ACSL</vendor>
     </definition>
     <parameters>
