@@ -6,7 +6,7 @@
     </definition>
     <parameters>
         <parameter name="CAM_EXPMODE" type="uint32" default="0">
-            <description>Exposure Mode</description>
+            <description>Exposure もど</description>
             <options>
                 <option name="Manual" value="0">
                     <exclusions>
